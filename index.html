@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="css/style.css">
+    <title>Todo list app</title>
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+    <div class="contorno">
+      <form id="my-formulario">
+        <h1>REGISTRO</h1>
+        <input type="text" name="nombre" required autocomplete="off" placeholder="ingrese nombre" />
+        <input type="text" name="apellido" required autocomplete="off" placeholder="ingrese apellido" />
+        <input type="number" name="edad" required autocomplete="off" placeholder="ingrese edad" />
+        <button type="submit" id="otro-enviar">Enviar</button>
+      </form>
+    </div>
+      <div>
+        <h2>RESULTADOS:</h2>
+        <form class="resultados" id="my-formulario1"><h2></h2></form>
+      </div>
+
+    <script>
+      const datos = [];
+      const $myFormulario = document.getElementById("my-formulario");
+      const $myFormulario1 = document.getElementById("my-formulario1");
+
+      const dibujarTabla = function () {
+        console.log(datos);
+        $myFormulario1.innerHTML = JSON.stringify(datos);
+      };
+
+      $myFormulario.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const $miInputUno = document.querySelector('input[name="nombre"]');
+        const $miInputDos = document.querySelector('input[name="apellido"]');
+        const $miInputTres = document.querySelector('input[name="edad"]');
+
+        datos.push({ nombre: $miInputUno.value });
+        datos.push({ apellido: $miInputDos.value });
+        datos.push({ edad: $miInputTres.value });
+
+        dibujarTabla();
+      });
+    </script>
+  </body>
+</html>

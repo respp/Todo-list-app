@@ -1,0 +1,89 @@
+* {
+	margin: 10;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 1920px;
+}
+body {
+	background-color:#181818;
+	display: flex;
+	align-items: top;
+	justify-content: center;
+}
+.contorno{
+	background: rgb(255,25,25);
+	background: linear-gradient(90deg, rgba(255,25,25,1) 0%, rgba(235,110,47,1) 54%, rgba(233,178,59,1) 95%);
+	border-radius: 5px;
+	height:260px;
+	margin:10px;
+}
+form{
+	background-color:#151414;
+	padding: 10px;
+	margin:5px;
+	width: 270px;
+	height: 250px;
+	border-radius: 7px;
+}
+.resultados{
+	background: rgb(25,57,255);
+	background: linear-gradient(90deg, rgba(25,57,255,1) 0%, rgba(91,47,235,1) 54%, rgba(214,59,233,1) 95%);
+	-webkit-background-clip: text;	
+  	color: transparent;  
+	height:500px;
+	margin:15px;
+	font-size:20px;
+}
+input{
+	width:200px;
+	height:35px;
+	margin:1px;
+}
+button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border:2px;
+	border-color: #1939ff;
+	border-style: inset;
+	width:80px; 
+	height:25px;
+	background: rgb(25,57,255);
+	background: linear-gradient(90deg, rgba(25,57,255,1) 0%, rgba(91,47,235,1) 54%, rgba(214,59,233,1) 95%);
+	-webkit-background-clip: text;	
+  	color: transparent;  
+	margin:5px;
+	border-radius:2px;
+	font-size:15px;
+	font-weight: bold;
+}
+button:hover{
+	background: rgb(25,57,255);
+	background: linear-gradient(90deg, rgba(25,57,255,1) 0%, rgba(91,47,235,1) 54%, rgba(214,59,233,1) 95%);
+	color:black;
+	border-style: outset;
+	border-color:#d63be9;
+}
+h1, h2{
+	font-size:35px;
+	background: rgb(255,25,25);
+	background: linear-gradient(90deg, rgba(255,25,25,1) 0%, rgba(235,110,47,1) 54%, rgba(233,178,59,1) 95%);
+	-webkit-background-clip: text;	
+  	color: transparent;  
+	display:flex;	
+	align-items: center;
+	justify-content: center;
+}
+h2{
+	background: rgb(25,57,255);
+	background: linear-gradient(90deg, rgba(25,57,255,1) 0%, rgba(91,47,235,1) 54%, rgba(214,59,233,1) 95%);
+	-webkit-background-clip: text;	
+  	color: transparent;
+	margin-top:45px;
+}
+section{
+	background-color: #FFE633;
+	align-items: center;
+	justify-content: center;
+	border-radius:5px;
+}
