@@ -11,3 +11,5 @@ Primera etapa:
 solo eso va a ser necesario para la primera entrega, en los post de las clases anteriores deje links a codigo que pueden tomar de ejemplo (sandbox links)
 
 obviamente todo esto tiene que estar versionado en github y deployado en netlify
+
+para visualizar la página: https://respp.github.io/Todo-list-app/
